@@ -574,28 +574,47 @@ $(document).ready(function () {
         }
 
         if (window.location.href.toString().indexOf('index.html') != -1) {
+            
+            setTimeout(function () {
 
-            imeiStr = "12345";
+                
+                var deviceId = localStorage.UUID;
 
-            //imeiStr = device.uuid;
+                alert("1"+deviceId);
+                alert("1" +deviceId.toString());
 
-            var request = {
-                IMEI: imeiStr
-            }
+                var request = {
+                    IMEI: deviceId
+                }
 
-            checkUser(request);
+                alert("2" +deviceId);
+                alert("2" +deviceId.toString());
 
-            $('#splashLogo').fadeOut(500);
-            $('#splashLogo').fadeIn(500);
-            h = setInterval(function () {
+                checkUser(request);
+
+                alert("4" +deviceId);
+                alert("4" +deviceId.toString());
+
+
                 $('#splashLogo').fadeOut(500);
                 $('#splashLogo').fadeIn(500);
+                h = setInterval(function () {
+                    $('#splashLogo').fadeOut(500);
+                    $('#splashLogo').fadeIn(500);
+                }, 1000);
+
             }, 1000);
-
-
+            
         }
 
+
         function checkUser(request) {
+
+
+            alert("3" + deviceId);
+            alert("3" + deviceId.toString());
+
+
 
             var dataSrting = JSON.stringify(request);
 
