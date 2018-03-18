@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
+    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
+
+
+    <link href="scripts/rob.css" rel="stylesheet" />
+    <link href="scripts/sat.css" rel="stylesheet" />
+
+    <link href="scripts/icon.css" rel="stylesheet" />
+
+    <script src="scripts/anime.min.js"></script>
+
+    <title>Epsilon 7.0</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+    <link href="scripts/jquery-ui.css" rel="stylesheet" />
+    <script src="scripts/jquery-uiJS.js"></script>
+
+
+</head>
+
+<body>
+    <div id="page-transitions">
+
+        <div class="page-preloader page-preloader-dark">
+            <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="header header-light header-full">
+            <a id="burgerMenu" href="#" class="header-icon header-icon-1 open-left-sidebar"><i class="fa fa-navicon"></i></a>
+            <!--<a href="#" class="scale-hover">-->
+            <img id="logo" src="images/logo.png" />
+            <!--</a>-->
+            <!--<a href="#" class="header-icon header-icon-4 open-right-sidebar"><i class="fa fa-envelope-o"></i></a>-->
+        </div>
+
+        <div class="bg bg-full"></div>
+
+        <div id="page-content" class="page-content header-clear bg bg-cover bg-transparent">
+            <div id="page-content-scroll">
+                <h1 id="interestHeader">Choose your interests</h1>
+                <div class="searchContainer">
+                    <div class="ui-widget">
+                        <input id="tags" placeholder="Try your own interests...">
+                    </div>
+                    <a href="#" id="addBTN" class="icon icon-round"><i class="material-icons">add</i></a>
+                </div>
+
+                <div class="searchContainer">
+                    <select id="selects"></select>
+                    <a href="#" id="addBTN2" class="icon icon-round"><i class="material-icons">add</i></a>
+                </div>
+                <hr />
+                <div id="pi" class="page-interests">
+
+
+                    <!--<a href="#" class="interest-box transparent-background bg-blue-dark">
+                        <strong>Technology</strong>
+                        <br />
+                        <i class="interest-first-icon fa fa-cog"></i>
+                        <i class="interest-second-icon hide-interest-icon fa fa-check"></i>
+                    </a>
+                    <a href="#" class="interest-box transparent-background bg-red-dark">
+                        <strong>Sports</strong>
+                        <br />
+                        <i class="interest-first-icon fa fa-futbol-o"></i>
+                        <i class="interest-second-icon hide-interest-icon fa fa-check"></i>
+                    </a>
+                    <a href="#" class="interest-box transparent-background bg-orange-dark">
+                        <strong>Cooking</strong>
+                        <br />
+                        <i class="interest-first-icon fa fa-cutlery fa fa-circle-o"></i>
+                        <i class="interest-second-icon hide-interest-icon fa fa-check"></i>
+                    </a>
+                    <a href="#" class="interest-box transparent-background bg-magenta-dark">
+                        <strong>Driving</strong>
+                        <br />
+                        <i class="interest-first-icon fa fa-cutlery"></i>
+                        <i class="interest-second-icon hide-interest-icon fa fa-check"></i>
+                    </a>
+                    <a href="#" class="interest-box transparent-background bg-teal-dark">
+                        <strong>Social</strong>
+                        <br />
+                        <i class="interest-first-icon fa fa-share-alt"></i>
+                        <i class="interest-second-icon hide-interest-icon fa fa-check"></i>
+                    </a>
+                    <a href="#" class="interest-box transparent-background bg-green-dark">
+                        <strong>Movies</strong>
+                        <br />
+                        <i class="interest-first-icon fa fa-youtube-play"></i>
+                        <i class="interest-second-icon hide-interest-icon fa fa-check"></i>
+                    </a>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-menu-controls light-footer-menu">
+            <a href="pref2.html" id="forwardBTN" class="footer-menu-open"><i class="material-icons">forward</i></a>
+            <!--<a href="#" class="footer-menu-close remove-menu"><i class="fa fa-times bg-red-dark"></i><em>Close</em></a>-->
+        </div>
+        <div class="footer-menu-tap-close remove-menu"></div>
+        <div class="footer-menu-background light-footer-background remove-menu"></div>
+
+        <div class="sidebar-tap-close"></div>
+        <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>
+
+    </div>
+</body>
+

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
+    <link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
+
+
+    <link href="scripts/rob.css" rel="stylesheet" />
+    <link href="scripts/sat.css" rel="stylesheet" />
+
+    <link href="scripts/icon.css" rel="stylesheet" />
+
+    <script src="scripts/anime.min.js"></script>
+
+    <title>Epsilon 7.0</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+    <link href="scripts/jquery-ui.css" rel="stylesheet" />
+    <script src="scripts/jquery-uiJS.js"></script>
+
+
+</head>
+
+<body>
+    <div id="page-transitions">
+
+        <div class="page-preloader page-preloader-dark">
+            <div class="loader loader-frames"><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="header header-light header-full">
+            <a id="burgerMenu" href="#" class="header-icon header-icon-1 open-left-sidebar"><i class="fa fa-navicon"></i></a>
+            <!--<a href="#" class="scale-hover">-->
+            <img id="logo" src="images/logo.png" />
+            <!--</a>-->
+            <!--<a href="#" class="header-icon header-icon-4 open-right-sidebar"><i class="fa fa-envelope-o"></i></a>-->
+        </div>
+
+        <div class="bg bg-full"></div>
+
+        <div id="page-content" class="page-content header-clear bg bg-cover bg-transparent">
+            <div id="page-content-scroll">
+                <h1 id="prefHeader">Notification Preferences</h1>
+
+
+                <div id="pi">
+
+                    <div class="container overflow-show">
+                        <h5 id="artHead" class="onoffswitch-text">Articles by interests</h5>
+                        <div id="artDiv" class="onoffswitch-2">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox-2" id="myonoffswitch-1" checked>
+                            <label class="onoffswitch-label-2" for="myonoffswitch-1"></label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div>
+                        <input id="artPerDay" class="range-slider range-blue" type="range" value="5" min="1" max="24" onchange="rangevalue2.value=value">
+                        <output class="range-slider-output" id="rangevalue2">5</output>
+                        <label id="artLBL">&nbsp;&nbsp;articles per day</label>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+
+                <div class="container overflow-show">
+                    <h5 id="aroundHead" class="onoffswitch-text">Articles around me</h5>
+                    <div id="aroundDiv" class="onoffswitch-2">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox-2" id="myonoffswitch-2" checked>
+                        <label class="onoffswitch-label-2" for="myonoffswitch-2"></label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+
+                <div class="container overflow-show">
+                    <h5 id="photoHead" class="onoffswitch-text">Photo of the day</h5>
+                    <div id="photoDiv" class="onoffswitch-2">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox-2" id="myonoffswitch-3" checked>
+                        <label class="onoffswitch-label-2" for="myonoffswitch-3"></label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div>
+                    <input id="photoTime" class="range-slider range-blue" type="range" value="12" min="0" max="23" onchange="rangevalue3.value=value">
+                    <label id="atLBL">&nbsp;&nbsp;&nbsp;&nbsp;at</label>
+                    <output class="range-slider-output" id="rangevalue3">12</output>
+                    <label id="photoLBL">:00</label>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-menu-controls light-footer-menu">
+            <a href="article.html" id="forwardBTN" class="footer-menu-open"><i class="material-icons">check</i></a>
+            <!--<a href="#" class="footer-menu-close remove-menu"><i class="fa fa-times bg-red-dark"></i><em>Close</em></a>-->
+        </div>
+        <div class="footer-menu-tap-close remove-menu"></div>
+        <div class="footer-menu-background light-footer-background remove-menu"></div>
+
+        <div class="sidebar-tap-close"></div>
+        <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>
+
+    </div>
+</body>
+
